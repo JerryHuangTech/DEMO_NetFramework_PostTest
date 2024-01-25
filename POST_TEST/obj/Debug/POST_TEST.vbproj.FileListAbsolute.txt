@@ -1,0 +1,13 @@
+F:\PD_DEMO\GIT\DEMO_NetFramework_PostTest\POST_TEST\bin\Debug\POST_TEST.exe.config
+F:\PD_DEMO\GIT\DEMO_NetFramework_PostTest\POST_TEST\bin\Debug\POST_TEST.exe
+F:\PD_DEMO\GIT\DEMO_NetFramework_PostTest\POST_TEST\bin\Debug\POST_TEST.pdb
+F:\PD_DEMO\GIT\DEMO_NetFramework_PostTest\POST_TEST\bin\Debug\POST_TEST.xml
+F:\PD_DEMO\GIT\DEMO_NetFramework_PostTest\POST_TEST\obj\Debug\POST_TEST.vbproj.AssemblyReference.cache
+F:\PD_DEMO\GIT\DEMO_NetFramework_PostTest\POST_TEST\obj\Debug\POST_TEST.MasterForm.resources
+F:\PD_DEMO\GIT\DEMO_NetFramework_PostTest\POST_TEST\obj\Debug\POST_TEST.Resources.resources
+F:\PD_DEMO\GIT\DEMO_NetFramework_PostTest\POST_TEST\obj\Debug\POST_TEST.URL_Browser.resources
+F:\PD_DEMO\GIT\DEMO_NetFramework_PostTest\POST_TEST\obj\Debug\POST_TEST.vbproj.GenerateResource.cache
+F:\PD_DEMO\GIT\DEMO_NetFramework_PostTest\POST_TEST\obj\Debug\POST_TEST.vbproj.CoreCompileInputs.cache
+F:\PD_DEMO\GIT\DEMO_NetFramework_PostTest\POST_TEST\obj\Debug\POST_TEST.exe
+F:\PD_DEMO\GIT\DEMO_NetFramework_PostTest\POST_TEST\obj\Debug\POST_TEST.xml
+F:\PD_DEMO\GIT\DEMO_NetFramework_PostTest\POST_TEST\obj\Debug\POST_TEST.pdb

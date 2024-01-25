@@ -1,0 +1,334 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+POST_TEST
+</name>
+</assembly>
+<members>
+<member name="T:POST_TEST.My.Resources.Resources">
+<summary>
+  用於查詢當地語系化字串等的強類型資源類別。
+</summary>
+</member>
+<member name="P:POST_TEST.My.Resources.Resources.ResourceManager">
+<summary>
+  傳回這個類別使用的快取的 ResourceManager 執行個體。
+</summary>
+</member>
+<member name="P:POST_TEST.My.Resources.Resources.Culture">
+<summary>
+  覆寫目前執行緒的 CurrentUICulture 屬性，對象是所有
+  使用這個強類型資源類別的資源查閱。
+</summary>
+</member>
+<member name="M:POST_TEST.CommonClass.CallWebservice(System.String,System.String)">
+ <summary>
+ 實際呼叫post
+ </summary>
+ <param name="SoapStr"></param>
+ <param name="strWebRequest"></param>
+ <returns></returns>
+</member>
+<member name="M:POST_TEST.CommonClass.ConvertNullToEmpty(System.Object)">
+ <summary>
+ 檢查每個 cell value 不會是Nothing或Null (建議使用於簡短文字，如Keyword或變數值)
+ </summary>
+ <param name="CheckData">需要被檢查與轉換為String.Trim的DataRow之Cell</param>
+ <returns></returns>
+ <remarks>工具</remarks>
+</member>
+<member name="M:POST_TEST.CommonClass.GetConfigValue(System.String)">
+ <summary>
+ 取得Config
+ </summary>
+ <param name="key"></param>
+ <returns></returns>
+</member>
+<member name="T:POST_TEST.ConfigReader">
+ <summary>
+ 可客製化讀取Config資訊
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.ConfigReader.GetSpecifyingConfigSetting(System.String,System.String)">
+ <summary>
+ 取得Web Config檔內的設定值
+ </summary>
+ <param name="SectionName">組態區段路徑和名稱</param>
+ <param name="SettingKey">組態Key值</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.ConfigReader.GetAppSettings(System.String)">
+ <summary>
+ 取的Web Config檔內的appSettings區塊中的數值
+ </summary>
+ <param name="SettingKey">組態Key值</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.ConfigReader.getConfig(System.String)">
+ <summary>
+ 取得web.Config AppSetting設定參數
+ </summary>
+ <param name="name">參數名稱</param>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.ConfigReader.getConnString(System.String)">
+ <summary>
+ 取得web.Config ConnectionString設定參數
+ </summary>
+ <param name="name">參數名稱</param>
+ <returns>String</returns>
+ <remarks></remarks>
+</member>
+<member name="T:POST_TEST.Converter">
+ <summary>
+ 型別轉換函式庫
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.Converter.ConvertNULLToString(System.Object)">
+ <summary>
+ 讓Null或Nothing在ToString轉換為""
+ </summary>
+ <param name="RowData">接受Object</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.Converter.getCLen(System.String)">
+ <summary>
+ 中文字以2位元計算字串長度
+ </summary>
+ <param name="txt">字串</param>
+ <returns>字串長度</returns>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.Converter.chkInt(System.String,System.String)">
+ <summary>
+ 數字字串轉整數
+ </summary>
+ <param name="txt">數字字串</param>
+ <param name="errMsg">錯誤時顯示的訊息(選擇性)</param>
+ <returns>傳回整數或0</returns>
+ <remarks>
+</remarks>
+</member>
+<member name="T:POST_TEST.EnumSet">
+ <summary>
+ 所有Enum設定
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:POST_TEST.EnumSet.CMDType">
+ <summary>
+ SQL執行類型
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:POST_TEST.EnumSet.WTType">
+ <summary>
+ Log記錄類型
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:POST_TEST.EnumSet.ExeStatus">
+ <summary>
+ 回傳執行狀況
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:POST_TEST.EnumSet.QueryContext">
+ <summary>
+ 執行SQL 類別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:POST_TEST.EnumSet.UpdateContext">
+ <summary>
+ 更新類別
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.FileManager.CrtTxt(System.String,System.String,System.Boolean)">
+ <summary>
+ 建立文字檔 Creat Text File = CrtTxt
+ </summary>
+<param name="FullPath" >完整路徑與檔名</param>
+<param name="Content" >寫入內容</param>
+ <param name="isCover" >是否覆蓋原內容(Default:false)</param>
+ <remarks>
+ Imports System.IO
+ </remarks>
+</member>
+<member name="T:POST_TEST.LogWriter">
+ <summary>
+ Log 紀錄
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.LogWriter.WriteErrorLog(System.String,System.String)">
+ <summary>
+ 錯誤訊息寫入文字檔
+ </summary>
+ <param name="title">傳入錯誤的主要訊息</param>
+ <param name="msg">傳入錯誤之Exception (請轉String)</param>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.LogWriter.WriteDataInfo(System.String,System.String)">
+ <summary>
+ Data訊息寫入文字檔
+ </summary>
+ <param name="title">資料寫入的主要開頭資訊</param>
+ <param name="msg">資料寫入的詳細資訊</param>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.LogWriter.WriteInfo(System.String,System.String)">
+ <summary>
+ 系統訊息
+ </summary>
+ <param name="msg">錯誤訊息</param>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.LogWriter.WriteLog(System.String,POST_TEST.EnumSet.WTType)">
+ <summary>
+ 訊息寫入文字檔
+ </summary>
+ <param name="msg">訊息</param>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.MasterForm.MasterForm_Load(System.Object,System.EventArgs)">
+ <summary>
+ 針對傳統HTTP POST的路徑設計
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.MasterForm.Check_Cell_NonNULL(System.Object)">
+ <summary>
+ 檢查DataTable的每個 cell value 不會是Nothing或Null
+ </summary>
+ <param name="CheckRowData">需要被檢查與轉換為String.Trim的DataRow之Cell</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.MasterForm.btnSelectXML_Click(System.Object,System.EventArgs)">
+ <summary>
+ 開啟XML控制
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:POST_TEST.MasterForm.PostController">
+ <summary>
+ POST控制器
+ </summary>
+</member>
+<member name="M:POST_TEST.MasterForm.PostFuncation">
+ <summary>
+ POST執行前置作業與叫用POST
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:POST_TEST.MasterForm.btnTestPost_Click(System.Object,System.EventArgs)">
+ <summary>
+ 按鈕
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:POST_TEST.MasterForm.Timer_Controller">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="M:POST_TEST.MasterForm.Timer1_Tick(System.Object,System.EventArgs)">
+ <summary>
+ 倒數計時器
+ </summary>
+</member>
+<member name="M:POST_TEST.Tool.getErr(System.Exception@,System.String)">
+ <summary>
+ 傳回錯誤訊息
+ </summary>
+ <param name="obj">Exception object</param>
+ <param name="msg">顯示資訊</param>
+ <returns>錯誤訊息</returns>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.Tool.releaseObj(System.Object@)">
+ <summary>
+ Release Object
+ </summary>
+ <param name="obj">Object</param>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.Tool.CheckPK(System.String,System.Int32)">
+ <summary>
+ 檢查PK長度
+ </summary>
+ <param name="pk">預設40，可自訂</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.URL_Browser.URL_Browser_Load(System.Object,System.EventArgs)">
+ <summary>
+ 導入頁面
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.URL_Browser.btnREFRESH_Click(System.Object,System.EventArgs)">
+ <summary>
+ 更新
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.URL_Browser.btnSTOP_Click(System.Object,System.EventArgs)">
+ <summary>
+ 停止
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.URL_Browser.btnPREVIOUS_Click(System.Object,System.EventArgs)">
+ <summary>
+ 上一頁
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.URL_Browser.btnNEXT_Click(System.Object,System.EventArgs)">
+ <summary>
+ 下一頁
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.URL_Browser.btnLINK_Click(System.Object,System.EventArgs)">
+ <summary>
+ 按下LINK
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:POST_TEST.URL_Browser.URL_TextBox_KeyUp(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ ENTER動作
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

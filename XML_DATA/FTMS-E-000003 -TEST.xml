@@ -1,0 +1,27 @@
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <Send xmlns="http://IT.MEGABANK.COM/">
+      <msgObj>
+        <ITMSG_EVENT_MSG>
+           <MSG_CODE>999996</MSG_CODE>
+           <OCCUR_DATE>2017042909383900</OCCUR_DATE>
+           <HOSTNAME>FromTESTHOST</HOSTNAME>
+		   <PLAT_FORM>WINDOWS</PLAT_FORM>
+		   <CTI_CODE>FTMS</CTI_CODE>
+		   <EVENT_SOURCE>A</EVENT_SOURCE>
+		   <DATA_TYPE>E</DATA_TYPE>
+		   <IS_OVERWRITE>N</IS_OVERWRITE>
+		   <PARAM_COUNT>0</PARAM_COUNT>
+		   <STATUS>14</STATUS>	 
+	       <msgDetail>
+              <ITMSG_EVENT_MSG_D>
+                 <PARAMETERS>VAR01</PARAMETERS>
+                 <CONTENT_LENGTH>12</CONTENT_LENGTH>
+                 <CONTENT>test錯誤訊息</CONTENT>
+              </ITMSG_EVENT_MSG_D>
+           </msgDetail>		   
+        </ITMSG_EVENT_MSG>
+      </msgObj>
+    </Send>
+  </soap:Body>
+</soap:Envelope>
