@@ -53,9 +53,10 @@ Partial Class MasterForm
         'btnTestPost
         '
         Me.btnTestPost.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnTestPost.Location = New System.Drawing.Point(513, 324)
+        Me.btnTestPost.Location = New System.Drawing.Point(684, 405)
+        Me.btnTestPost.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnTestPost.Name = "btnTestPost"
-        Me.btnTestPost.Size = New System.Drawing.Size(75, 23)
+        Me.btnTestPost.Size = New System.Drawing.Size(100, 29)
         Me.btnTestPost.TabIndex = 0
         Me.btnTestPost.Text = "Start"
         Me.btnTestPost.UseVisualStyleBackColor = True
@@ -63,18 +64,20 @@ Partial Class MasterForm
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(9, 67)
+        Me.Label2.Location = New System.Drawing.Point(12, 84)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(35, 12)
+        Me.Label2.Size = New System.Drawing.Size(45, 15)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "回傳: "
         '
         'btn_ClearAll
         '
         Me.btn_ClearAll.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btn_ClearAll.Location = New System.Drawing.Point(597, 324)
+        Me.btn_ClearAll.Location = New System.Drawing.Point(796, 405)
+        Me.btn_ClearAll.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_ClearAll.Name = "btn_ClearAll"
-        Me.btn_ClearAll.Size = New System.Drawing.Size(75, 23)
+        Me.btn_ClearAll.Size = New System.Drawing.Size(100, 29)
         Me.btn_ClearAll.TabIndex = 3
         Me.btn_ClearAll.Text = "ClearALL"
         Me.btn_ClearAll.UseVisualStyleBackColor = True
@@ -83,43 +86,48 @@ Partial Class MasterForm
         '
         Me.URL_TextBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.URL_TextBox.Location = New System.Drawing.Point(49, 33)
+        Me.URL_TextBox.Location = New System.Drawing.Point(65, 41)
+        Me.URL_TextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.URL_TextBox.Name = "URL_TextBox"
-        Me.URL_TextBox.Size = New System.Drawing.Size(539, 22)
+        Me.URL_TextBox.Size = New System.Drawing.Size(717, 25)
         Me.URL_TextBox.TabIndex = 4
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(9, 38)
+        Me.Label3.Location = New System.Drawing.Point(12, 48)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(34, 12)
+        Me.Label3.Size = New System.Drawing.Size(43, 15)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "URL: "
         '
         'btnDirectLink
         '
         Me.btnDirectLink.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnDirectLink.Location = New System.Drawing.Point(594, 33)
+        Me.btnDirectLink.Location = New System.Drawing.Point(792, 41)
+        Me.btnDirectLink.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnDirectLink.Name = "btnDirectLink"
-        Me.btnDirectLink.Size = New System.Drawing.Size(75, 23)
+        Me.btnDirectLink.Size = New System.Drawing.Size(100, 29)
         Me.btnDirectLink.TabIndex = 6
         Me.btnDirectLink.Text = "直接連結"
         Me.btnDirectLink.UseVisualStyleBackColor = True
         '
         'StatusStrip1
         '
+        Me.StatusStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tssLabel})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 360)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 453)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(684, 22)
+        Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 19, 0)
+        Me.StatusStrip1.Size = New System.Drawing.Size(912, 25)
         Me.StatusStrip1.TabIndex = 7
         Me.StatusStrip1.Text = "StatusStrip1"
         '
         'tssLabel
         '
         Me.tssLabel.Name = "tssLabel"
-        Me.tssLabel.Size = New System.Drawing.Size(104, 17)
+        Me.tssLabel.Size = New System.Drawing.Size(129, 19)
         Me.tssLabel.Text = "目前未做任何動作"
         '
         'MESSAGE_LOG
@@ -127,28 +135,31 @@ Partial Class MasterForm
         Me.MESSAGE_LOG.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.MESSAGE_LOG.Location = New System.Drawing.Point(13, 92)
+        Me.MESSAGE_LOG.Location = New System.Drawing.Point(17, 115)
+        Me.MESSAGE_LOG.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MESSAGE_LOG.Multiline = True
         Me.MESSAGE_LOG.Name = "MESSAGE_LOG"
         Me.MESSAGE_LOG.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.MESSAGE_LOG.Size = New System.Drawing.Size(655, 185)
+        Me.MESSAGE_LOG.Size = New System.Drawing.Size(872, 230)
         Me.MESSAGE_LOG.TabIndex = 11
         '
         'tbSelectXML
         '
         Me.tbSelectXML.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.tbSelectXML.Location = New System.Drawing.Point(49, 5)
+        Me.tbSelectXML.Location = New System.Drawing.Point(65, 6)
+        Me.tbSelectXML.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbSelectXML.Name = "tbSelectXML"
-        Me.tbSelectXML.Size = New System.Drawing.Size(539, 22)
+        Me.tbSelectXML.Size = New System.Drawing.Size(717, 25)
         Me.tbSelectXML.TabIndex = 13
         '
         'btnSelectXML
         '
         Me.btnSelectXML.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnSelectXML.Location = New System.Drawing.Point(593, 5)
+        Me.btnSelectXML.Location = New System.Drawing.Point(791, 6)
+        Me.btnSelectXML.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSelectXML.Name = "btnSelectXML"
-        Me.btnSelectXML.Size = New System.Drawing.Size(75, 23)
+        Me.btnSelectXML.Size = New System.Drawing.Size(100, 29)
         Me.btnSelectXML.TabIndex = 14
         Me.btnSelectXML.Text = "選擇XML"
         Me.btnSelectXML.UseVisualStyleBackColor = True
@@ -156,9 +167,10 @@ Partial Class MasterForm
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(9, 9)
+        Me.Label4.Location = New System.Drawing.Point(12, 11)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(28, 12)
+        Me.Label4.Size = New System.Drawing.Size(37, 15)
         Me.Label4.TabIndex = 15
         Me.Label4.Text = "File: "
         '
@@ -166,18 +178,20 @@ Partial Class MasterForm
         '
         Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(323, 308)
+        Me.Label1.Location = New System.Drawing.Point(431, 385)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(80, 12)
+        Me.Label1.Size = New System.Drawing.Size(102, 15)
         Me.Label1.TabIndex = 16
         Me.Label1.Text = "每次POST筆數"
         '
         'txtPostTimes
         '
         Me.txtPostTimes.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.txtPostTimes.Location = New System.Drawing.Point(409, 305)
+        Me.txtPostTimes.Location = New System.Drawing.Point(545, 381)
+        Me.txtPostTimes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtPostTimes.Name = "txtPostTimes"
-        Me.txtPostTimes.Size = New System.Drawing.Size(56, 22)
+        Me.txtPostTimes.Size = New System.Drawing.Size(73, 25)
         Me.txtPostTimes.TabIndex = 17
         Me.txtPostTimes.Text = "1"
         Me.txtPostTimes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -186,18 +200,20 @@ Partial Class MasterForm
         '
         Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(158, 308)
+        Me.Label5.Location = New System.Drawing.Point(211, 385)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(97, 12)
+        Me.Label5.Size = New System.Drawing.Size(122, 15)
         Me.Label5.TabIndex = 18
         Me.Label5.Text = "每次間隔時間(秒)"
         '
         'txtSecond
         '
         Me.txtSecond.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.txtSecond.Location = New System.Drawing.Point(261, 305)
+        Me.txtSecond.Location = New System.Drawing.Point(348, 381)
+        Me.txtSecond.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSecond.Name = "txtSecond"
-        Me.txtSecond.Size = New System.Drawing.Size(56, 22)
+        Me.txtSecond.Size = New System.Drawing.Size(73, 25)
         Me.txtSecond.TabIndex = 19
         Me.txtSecond.Text = "0"
         Me.txtSecond.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -209,9 +225,10 @@ Partial Class MasterForm
         'txtCircle
         '
         Me.txtCircle.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.txtCircle.Location = New System.Drawing.Point(96, 305)
+        Me.txtCircle.Location = New System.Drawing.Point(128, 381)
+        Me.txtCircle.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtCircle.Name = "txtCircle"
-        Me.txtCircle.Size = New System.Drawing.Size(56, 22)
+        Me.txtCircle.Size = New System.Drawing.Size(73, 25)
         Me.txtCircle.TabIndex = 20
         Me.txtCircle.Text = "1"
         Me.txtCircle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -220,9 +237,10 @@ Partial Class MasterForm
         '
         Me.Label6.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(13, 308)
+        Me.Label6.Location = New System.Drawing.Point(17, 385)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(77, 12)
+        Me.Label6.Size = New System.Drawing.Size(97, 15)
         Me.Label6.TabIndex = 21
         Me.Label6.Text = "循環執行次數"
         '
@@ -230,9 +248,10 @@ Partial Class MasterForm
         '
         Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(207, 335)
+        Me.Label7.Location = New System.Drawing.Point(276, 419)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(100, 12)
+        Me.Label7.Size = New System.Drawing.Size(126, 15)
         Me.Label7.TabIndex = 22
         Me.Label7.Text = "間隔時間(秒)倒數:"
         '
@@ -240,9 +259,10 @@ Partial Class MasterForm
         '
         Me.lblSecond.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lblSecond.AutoSize = True
-        Me.lblSecond.Location = New System.Drawing.Point(304, 335)
+        Me.lblSecond.Location = New System.Drawing.Point(405, 419)
+        Me.lblSecond.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSecond.Name = "lblSecond"
-        Me.lblSecond.Size = New System.Drawing.Size(65, 12)
+        Me.lblSecond.Size = New System.Drawing.Size(82, 15)
         Me.lblSecond.TabIndex = 23
         Me.lblSecond.Text = "送出後倒數"
         '
@@ -250,9 +270,10 @@ Partial Class MasterForm
         '
         Me.Label8.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(12, 335)
+        Me.Label8.Location = New System.Drawing.Point(16, 419)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(116, 12)
+        Me.Label8.Size = New System.Drawing.Size(146, 15)
         Me.Label8.TabIndex = 24
         Me.Label8.Text = "目前執行之剩餘次數:"
         '
@@ -260,9 +281,10 @@ Partial Class MasterForm
         '
         Me.lblTimes.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lblTimes.AutoSize = True
-        Me.lblTimes.Location = New System.Drawing.Point(125, 335)
+        Me.lblTimes.Location = New System.Drawing.Point(167, 419)
+        Me.lblTimes.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblTimes.Name = "lblTimes"
-        Me.lblTimes.Size = New System.Drawing.Size(65, 12)
+        Me.lblTimes.Size = New System.Drawing.Size(82, 15)
         Me.lblTimes.TabIndex = 25
         Me.lblTimes.Text = "送出後倒數"
         '
@@ -270,18 +292,19 @@ Partial Class MasterForm
         '
         Me.chkLoop.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.chkLoop.AutoSize = True
-        Me.chkLoop.Location = New System.Drawing.Point(14, 289)
+        Me.chkLoop.Location = New System.Drawing.Point(19, 362)
+        Me.chkLoop.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkLoop.Name = "chkLoop"
-        Me.chkLoop.Size = New System.Drawing.Size(72, 16)
+        Me.chkLoop.Size = New System.Drawing.Size(86, 19)
         Me.chkLoop.TabIndex = 27
         Me.chkLoop.Text = "無限循環"
         Me.chkLoop.UseVisualStyleBackColor = True
         '
         'MasterForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(684, 382)
+        Me.ClientSize = New System.Drawing.Size(912, 478)
         Me.Controls.Add(Me.chkLoop)
         Me.Controls.Add(Me.lblTimes)
         Me.Controls.Add(Me.Label8)
@@ -304,9 +327,10 @@ Partial Class MasterForm
         Me.Controls.Add(Me.btn_ClearAll)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnTestPost)
-        Me.MinimumSize = New System.Drawing.Size(700, 420)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MinimumSize = New System.Drawing.Size(927, 513)
         Me.Name = "MasterForm"
-        Me.Text = "GSS POST TEST"
+        Me.Text = "POST TEST"
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
